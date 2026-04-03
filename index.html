@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume | <span id="titleName"></span></title>
+  <meta name="description" content="Personal resume website" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <div class="header-left">
+      <h1 id="name"></h1>
+      <p class="muted" id="headline"></p>
+      <p class="muted" id="location"></p>
+    </div>
+
+    <div class="header-right">
+      <a id="email" class="chip" href="#">Email</a>
+      <a id="linkedin" class="chip" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a id="github" class="chip" href="#" target="_blank" rel="noreferrer">GitHub</a>
+      <button id="toggleTheme" class="chip button" type="button">Toggle theme</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Summary</h2>
+      <ul id="summary"></ul>
+    </section>
+
+    <section class="grid">
+      <section class="card">
+        <h2>Skills</h2>
+        <div id="skills"></div>
+      </section>
+
+      <section class="card">
+        <h2>Certifications</h2>
+        <ul id="certifications"></ul>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Experience</h2>
+      <div id="experience"></div>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <div id="projects"></div>
+    </section>
+
+    <section class="card">
+      <h2>Education</h2>
+      <div id="education"></div>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p class="muted">
+        Best way to reach me: <a id="contactEmail" href="#">Email</a>
+      </p>
+      <p class="muted small">
+        Tip: Avoid posting your home address on public resumes/websites.
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer muted">
+    <span id="footerText"></span>
+  </footer>
+
+  <script src="resume-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
