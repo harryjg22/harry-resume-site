@@ -1,13 +1,12 @@
 // resume-data.js
 window.RESUME = {
   name: "Harry Goldstein",
-  headline: "Software Engineer | Cybersecurity | Recent Graduate",
-  location: "Maryland, USA",
-  email: "youremail@example.com",
-  phone: "(555) 555-5555", // optional
-  linkedin: "https://www.linkedin.com/in/your-handle",
-  github: "https://github.com/your-username",
-  website: "", // optional
+  headline: "Software Engineering | Cybersecurity ",
+  location: "Huntingdon Valley, PA, USA",
+  email: "harryjg22@gmail.com",
+  phone: "(267) 309-7804", 
+  linkedin: "https://www.linkedin.com/in/harryjgoldstein/",
+  github: "https://github.com/harryjg22",
   summary: [
     "Recent Computer Science graduate focused on cybersecurity and backend development.",
     "Comfortable with Java, SQL, REST APIs, and building real-world projects with modern tooling.",
@@ -63,7 +62,7 @@ window.RESUME = {
   ],
 
   certifications: [
-    "CompTIA A+ (or in progress — update this line)"
+    "CompTIA A+ (March 1, 2026)"
   ],
 
   awards: [
