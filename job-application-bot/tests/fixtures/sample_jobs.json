@@ -1,0 +1,82 @@
+[
+  {
+    "source": "greenhouse",
+    "source_id": "1001",
+    "company": "Keystone Networks",
+    "title": "Entry-Level Help Desk Technician",
+    "location": "Philadelphia, PA",
+    "url": "https://boards.greenhouse.io/keystonenetworks/jobs/1001",
+    "description": "Join our IT support team providing help desk and desktop support to internal staff. Responsibilities include troubleshooting Windows and macOS issues, resetting passwords and unlocking accounts in Active Directory, managing tickets in ServiceNow, and basic network cabling (Cat-5e) for new workstations. CompTIA A+ preferred. 0-2 years of experience welcome.",
+    "posted_at": "2026-08-20"
+  },
+  {
+    "source": "lever",
+    "source_id": "2002",
+    "company": "GridPoint Systems",
+    "title": "Senior Network Engineer",
+    "location": "Remote",
+    "url": "https://jobs.lever.co/gridpoint/2002",
+    "description": "We need a senior network engineer with 10+ years of experience designing enterprise WAN/LAN architecture, BGP/OSPF routing, and leading a team of network technicians. Deep experience with Cisco ACI and data center switching required.",
+    "posted_at": "2026-08-18"
+  },
+  {
+    "source": "greenhouse",
+    "source_id": "1003",
+    "company": "Brightloop",
+    "title": "Junior Software Engineer",
+    "location": "Remote",
+    "url": "https://boards.greenhouse.io/brightloop/jobs/1003",
+    "description": "Brightloop is hiring a junior software engineer to join our backend team. You'll build REST APIs in Java and Spring Boot, work with PostgreSQL and Redis, and ship features using Docker Compose for local development. 0-1 years professional experience is fine - recent grads encouraged to apply. Familiarity with JDBC and unit testing a plus.",
+    "posted_at": "2026-08-25"
+  },
+  {
+    "source": "lever",
+    "source_id": "2004",
+    "company": "Vellum Cloud",
+    "title": "Staff Software Architect",
+    "location": "Remote",
+    "url": "https://jobs.lever.co/vellum/2004",
+    "description": "Lead our platform architecture as a staff-level engineer. Requires 12+ years designing distributed systems at scale, deep Kubernetes and Kafka expertise, and experience mentoring senior engineers.",
+    "posted_at": "2026-08-15"
+  },
+  {
+    "source": "remoteok",
+    "source_id": "3005",
+    "company": "Harborview Retail Group",
+    "title": "Marketing Manager",
+    "location": "Remote",
+    "url": "https://remoteok.com/l/3005",
+    "description": "Lead our marketing team, own the content calendar, and manage paid social campaigns. 5+ years in B2C marketing required.",
+    "posted_at": "2026-08-10"
+  },
+  {
+    "source": "greenhouse",
+    "source_id": "1006",
+    "company": "Circuit Path IT",
+    "title": "IT Support Specialist I",
+    "location": "King of Prussia, PA",
+    "url": "https://boards.greenhouse.io/circuitpath/jobs/1006",
+    "description": "Circuit Path IT is looking for an entry-level IT Support Specialist to provide desktop support, manage DNS/DHCP configuration, and assist with Microsoft 365 and Google Workspace administration. ServiceNow ticketing experience a plus. Associate-level role, will train.",
+    "posted_at": "2026-08-27"
+  },
+  {
+    "source": "remoteok",
+    "source_id": "3007",
+    "company": "Fernwood Data",
+    "title": "Backend Developer (Python)",
+    "location": "Remote",
+    "url": "https://remoteok.com/l/3007",
+    "description": "We're looking for a backend developer to build data pipelines in Python and Django, with PostgreSQL as our primary datastore. 2+ years experience with REST APIs and Docker required.",
+    "posted_at": "2026-08-22"
+  },
+  {
+    "source": "lever",
+    "source_id": "2008",
+    "company": "Anchor Cabling Co",
+    "title": "Field Cable Technician",
+    "location": "Hatfield, PA",
+    "url": "https://jobs.lever.co/anchorcabling/2008",
+    "description": "Install and terminate Cat-5e and Cat-6 structured cabling in retail and commercial buildings, run cables through ceiling panels, and maintain patch panels and network switch closets. No experience required, will train; CompTIA A+ a plus.",
+    "posted_at": "2026-08-29"
+  }
+]

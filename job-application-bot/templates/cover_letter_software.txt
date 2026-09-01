@@ -1,0 +1,31 @@
+{date}
+
+Hiring Team
+{company}
+
+Re: {title}
+
+Dear Hiring Team,
+
+I'm writing to apply for the {title} role at {company}. I'm a Computer
+Science graduate (UMBC, Cybersecurity track) with hands-on full-stack
+development experience in Java, Spring Boot, SQL, and REST API design,
+gained through Revature's Software Engineering program and several
+independent projects.
+
+Recent examples include a Spring Boot background job-processing system
+using Redis queues, scheduled retries, and a Dead Letter Queue backed by
+PostgreSQL, and a RESTful micro-blogging API built with a
+Controller/Service/DAO architecture and JDBC. I'm comfortable across the
+stack, from JavaScript/HTML/CSS on the frontend to Java and SQL on the
+backend, and with Docker Compose for local deployment.
+
+Based on the posting, I believe my background lines up well with:
+{matched_skills}
+
+I'd welcome the opportunity to bring that same builder's mindset to
+{company}. Thank you for your consideration.
+
+Sincerely,
+{name}
+{email} | {phone}

@@ -1,0 +1,126 @@
+# Keyword lists used to (1) classify a job posting as Hardware/IT vs Software Development,
+# and (2) score how qualified the candidate is for it, based on the two resumes.
+#
+# weight: relative importance of that skill matching in the job description/title.
+#   3 = core/differentiating skill, 2 = solid supporting skill, 1 = nice-to-have/tool.
+#
+# Tune these lists as your resumes change - the matcher reads this file at runtime.
+
+tracks:
+  hardware_it:
+    resume_file: "hardware_it.pdf"
+    cover_letter_template: "cover_letter_hardware.txt"
+    title_keywords:
+      - "help desk"
+      - "service desk"
+      - "desktop support"
+      - "it support"
+      - "it technician"
+      - "field technician"
+      - "network technician"
+      - "cable technician"
+      - "computer technician"
+      - "systems administrator"
+      - "it administrator"
+      - "support specialist"
+      - "technical support"
+      - "it specialist"
+      - "network installer"
+      - "low voltage technician"
+      - "structured cabling"
+    skills:
+      - {name: "Active Directory", weight: 3}
+      - {name: "Windows Server", weight: 3}
+      - {name: "Group Policy", weight: 2, aliases: ["GPO", "GPOs"]}
+      - {name: "DNS", weight: 2}
+      - {name: "DHCP", weight: 2}
+      - {name: "ServiceNow", weight: 2}
+      - {name: "Incident Management", weight: 1}
+      - {name: "Ticketing", weight: 1, aliases: ["ticketing system"]}
+      - {name: "Help Desk", weight: 3, aliases: ["help-desk", "service desk"]}
+      - {name: "Desktop Support", weight: 3}
+      - {name: "Troubleshooting", weight: 2}
+      - {name: "Windows", weight: 1}
+      - {name: "macOS", weight: 1, aliases: ["Mac OS", "Apple"]}
+      - {name: "Malware Removal", weight: 1}
+      - {name: "Hardware Replacement", weight: 1, aliases: ["hardware repair"]}
+      - {name: "CompTIA A+", weight: 3, aliases: ["A+"]}
+      - {name: "CompTIA Security+", weight: 3, aliases: ["Security+"]}
+      - {name: "Cat-5e", weight: 2, aliases: ["Cat5e", "Cat 5e", "Cat-6", "Cat6", "structured cabling"]}
+      - {name: "Network Cabling", weight: 3, aliases: ["cabling", "patch panel", "patch panels"]}
+      - {name: "Network Switch", weight: 2, aliases: ["network switches"]}
+      - {name: "Virtualization", weight: 2, aliases: ["VirtualBox", "Proxmox", "hypervisor", "VMware"]}
+      - {name: "Google Workspace", weight: 1}
+      - {name: "Microsoft 365", weight: 1, aliases: ["M365", "Office 365"]}
+      - {name: "Jira", weight: 1}
+      - {name: "Excel", weight: 1}
+
+  software_development:
+    resume_file: "software_development.pdf"
+    cover_letter_template: "cover_letter_software.txt"
+    title_keywords:
+      - "software engineer"
+      - "software developer"
+      - "backend developer"
+      - "back-end developer"
+      - "full stack developer"
+      - "full-stack developer"
+      - "java developer"
+      - "application developer"
+      - "web developer"
+      - "programmer"
+      - "software engineering"
+    skills:
+      - {name: "Java", weight: 3}
+      - {name: "Python", weight: 2}
+      - {name: "SQL", weight: 2}
+      - {name: "JavaScript", weight: 2}
+      - {name: "HTML", weight: 1, aliases: ["HTML/CSS", "CSS"]}
+      - {name: "C++", weight: 1, aliases: ["C/C++", "C"]}
+      - {name: "Spring Boot", weight: 3, aliases: ["Spring Framework", "Spring"]}
+      - {name: "REST API", weight: 3, aliases: ["REST", "RESTful", "RESTful API", "APIs"]}
+      - {name: "JDBC", weight: 2}
+      - {name: "MVC", weight: 1, aliases: ["MVC architecture"]}
+      - {name: "PostgreSQL", weight: 2, aliases: ["Postgres"]}
+      - {name: "MySQL", weight: 2}
+      - {name: "SQLite", weight: 1}
+      - {name: "Redis", weight: 2}
+      - {name: "Docker", weight: 2, aliases: ["Docker Compose"]}
+      - {name: "Git", weight: 1, aliases: ["GitHub", "GitLab", "version control"]}
+      - {name: "Unit Testing", weight: 1, aliases: ["JUnit", "unit tests"]}
+      - {name: "CRUD", weight: 1}
+      - {name: "Jira", weight: 1}
+      - {name: "Agile", weight: 1, aliases: ["Scrum"]}
+
+# Title-based signals applied on top of the per-track score, regardless of track.
+seniority:
+  # Bonus points added when these appear in the title (candidate is early-career).
+  favorable_title_terms:
+    - "junior"
+    - "entry"
+    - "entry-level"
+    - "associate"
+    - "trainee"
+    - "intern"
+    - "level i"
+    - "level 1"
+    - "i "
+  # Penalty applied when these appear in the title (likely too senior for a recent grad).
+  unfavorable_title_terms:
+    - "senior"
+    - "sr."
+    - "staff"
+    - "principal"
+    - "lead"
+    - "director"
+    - "manager"
+    - "head of"
+    - "architect"
+  favorable_bonus: 8
+  unfavorable_penalty: 20
+
+  # Years-of-experience phrases in the description that suggest the role wants more
+  # experience than an entry-level candidate has. Each match found beyond the
+  # "max_years_ok" threshold subtracts points.
+  max_years_ok: 2
+  years_penalty_per_year_over: 6
