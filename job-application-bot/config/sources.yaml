@@ -1,0 +1,46 @@
+# Job sources. Only sources with public/free APIs (no scraping of login-walled
+# sites like LinkedIn/Indeed, which forbid automated access in their Terms of
+# Service) are included. Add API keys via a local .env file - see .env.example.
+
+remoteok:
+  enabled: true
+  # Public JSON feed, no key required. Remote software/IT jobs.
+  url: "https://remoteok.com/api"
+
+greenhouse:
+  enabled: true
+  # Company "board tokens" - found in a company's Greenhouse job board URL:
+  # https://boards.greenhouse.io/<token>
+  # Add any companies you're targeting. This uses Greenhouse's public,
+  # unauthenticated job board API meant for embedding listings - no login needed.
+  companies:
+    - "stripe"
+    - "airbnb"
+    - "cloudflare"
+    - "robinhood"
+
+lever:
+  enabled: true
+  # Company tokens from https://jobs.lever.co/<token>
+  companies:
+    - "netflix"
+    - "plaid"
+
+usajobs:
+  enabled: false
+  # Requires a free API key: https://developer.usajobs.gov/apirequest
+  # Good source for federal IT/network technician and help-desk roles.
+  # Set USAJOBS_API_KEY and USAJOBS_EMAIL in .env to enable.
+  keywords: ["help desk", "network technician", "it specialist", "software developer"]
+  location: "Pennsylvania"
+
+adzuna:
+  enabled: false
+  # Requires free app_id/app_key: https://developer.adzuna.com/
+  # Aggregates postings from many boards (Indeed, ZipRecruiter, company sites, etc.)
+  # via Adzuna's own licensed API - not scraping those sites directly.
+  # Set ADZUNA_APP_ID and ADZUNA_APP_KEY in .env to enable.
+  country: "us"
+  what: "software engineer OR help desk OR network technician"
+  where: "Pennsylvania"
+  max_days_old: 7

@@ -1,0 +1,31 @@
+{date}
+
+Hiring Team
+{company}
+
+Re: {title}
+
+Dear Hiring Team,
+
+I'm writing to apply for the {title} role at {company}. I bring hands-on IT
+support and network infrastructure experience: as an Assistant Network
+Technician I install and terminate Cat-5e cabling and network equipment
+across retail environments, and as a Geek Squad Consultation Agent I
+diagnose and resolve hardware and software issues across desktops, mobile
+devices, and Smart TVs for a high volume of customers daily.
+
+I hold CompTIA A+ and Security+ certifications and am an Apple Authorized
+Service Provider technician. In my own home-lab projects I've built and
+administered Active Directory environments (OUs, GPOs, AD DS) on Windows
+Server, resolved simulated help-desk incidents (account lockouts, password
+resets, provisioning) end to end, and documented them in ServiceNow.
+
+Based on the posting, I believe my background lines up well with:
+{matched_skills}
+
+I'd welcome the chance to bring that same troubleshooting mindset and
+attention to detail to {company}. Thank you for your consideration.
+
+Sincerely,
+{name}
+{email} | {phone}
